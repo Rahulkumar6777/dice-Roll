@@ -4,6 +4,7 @@ const dicerollSound = new Audio("diceGameAudio/dice-rolling-sound.mp3");
 let player1="player1"
 let player2="player2"
 
+// ye name dalne ka function hai
 
 function editName() {
 
@@ -19,18 +20,20 @@ function editName() {
     document.querySelector("p.player2").innerHTML = player2;   
 }
 
+// ye diceolling ka function hai
+
 function rollTheDice() {
 
     var randomPhase = Math.floor(Math.random() * 6) + 1;
     dicerollSound.play()
-    var diceLocation1 = "images/" + "dice" + randomPhase + ".png";
+    var diceLocation1 = "images/" + "dice" + randomPhase + ".png";  // yeha par hum log jo dice me sare images hai usko select kar rahe hai
     var img1 = document.querySelector(".img1");
     img1.setAttribute("src", diceLocation1);
 
 
     var randomPhase = Math.floor(Math.random() * 6) + 1;
     dicerollSound.play()
-    var diceLocation2 = "images/" + "dice" + randomPhase + ".png";
+    var diceLocation2 = "images/" + "dice" + randomPhase + ".png";  // yeha par hum log jo dice me sare images hai usko select kar rahe hai
     var img1 = document.querySelector(".img2");
     img1.setAttribute("src", diceLocation2);
 
