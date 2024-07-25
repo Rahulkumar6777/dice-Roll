@@ -20,5 +20,10 @@
     text-decoration: none;
 }
 
+.butn:hover{
+    background: #fff;
+    color: #4ecca3;
+}
+
 
 

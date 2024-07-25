@@ -26,24 +26,24 @@ function rollTheDice() {
 
     var randomPhase = Math.floor(Math.random() * 6) + 1;
     dicerollSound.play()
-    var diceLocation1 = "images/" + "dice" + randomPhase + ".png";  // yeha par hum log jo dice me sare images hai usko select kar rahe hai
+    var dice1 = "images/" + "dice" + randomPhase + ".png";  // yeha par hum log jo dice me sare images hai usko select kar rahe hai
     var img1 = document.querySelector(".img1");
-    img1.setAttribute("src", diceLocation1);
+    img1.setAttribute("src", dice1);
 
 
     var randomPhase = Math.floor(Math.random() * 6) + 1;
     dicerollSound.play()
-    var diceLocation2 = "images/" + "dice" + randomPhase + ".png";  // yeha par hum log jo dice me sare images hai usko select kar rahe hai
+    var dice2 = "images/" + "dice" + randomPhase + ".png";  // yeha par hum log jo dice me sare images hai usko select kar rahe hai
     var img1 = document.querySelector(".img2");
-    img1.setAttribute("src", diceLocation2);
+    img1.setAttribute("src", dice2);
 
 
-    if(diceLocation1 > diceLocation2){
-        document.querySelector("h1.win").innerHTML = `${player1} Win`;  
+    if(dice1 > dice2){
+        document.querySelector("h1.win").innerHTML = `${player1}`;  
     }
 
-    else if (diceLocation1 < diceLocation2){
-        document.querySelector("h1.win").innerHTML = `${player2} Win`;
+    else if (dice2 < dice2){
+        document.querySelector("h1.win").innerHTML = `${player2}`;
     }
 
     else{
