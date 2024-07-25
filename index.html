@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="dice-roll.css">
+<body>
+    <h1>Lets'Play</h1>
+    <h1 class="win"></h1>
+    <div class="container">
+        <div class="dice">
+            <p class="player1">player1</p>
+            <img src="images/dice6.png" alt="" class="img1">
+        </div>
+        <div class="dice">
+            <p class="player2">player2</p>
+            <img src="images/dice6.png" alt="" class="img2">
+        </div>
+    </div>
+
+
+    <div class="container bottom">
+        <button type="button" class="butn" onClick="rollTheDice()">Roll the Dice</button>
+        <button type="button" class="butn" onClick="editName()">Edit Names</button>
+    </div>
+
+    <script src="dice-roll.js"></script>
+</body>
+</html>
