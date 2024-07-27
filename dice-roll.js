@@ -31,6 +31,8 @@ function rollTheDice() {
     img1.setAttribute("src", dice1);
 
 
+    
+
     var randomPhase = Math.floor(Math.random() * 6) + 1;
     dicerollSound.play()
     var dice2 = "images/" + "dice" + randomPhase + ".png";  // yeha par hum log jo dice me sare images hai usko select kar rahe hai
@@ -39,11 +41,11 @@ function rollTheDice() {
 
 
     if(dice1 > dice2){
-        document.querySelector("h1.win").innerHTML = `${player1}`;  
+        document.querySelector("h1.win").innerHTML = `${player1 } win`;  
     }
 
-    else if (dice2 < dice2){
-        document.querySelector("h1.win").innerHTML = `${player2}`;
+    else if (dice1 < dice2){
+        document.querySelector("h1.win").innerHTML = `${player2} win`;
     }
 
     else{
